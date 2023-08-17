@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project3</title>
+</head>
+
+<body background="132.png" link="#000" alink="#017bf5" vlink="#000"></bodybackground>
+    <h1>Analog Clock</h1>
+    <h3>Introduction: </h3>
+    <p>In this article, we are going to describe how to make an analogue clock using the Graphics class in Java. To make
+        an analogue clock we need to use the Thread and Graphics Classes of Java.<br> The threading concept is used to
+        move
+        the second, minute and hours hands of the clock and the Graphics class is used to create a line and oval and
+        colour of the hands.<br>
+
+        These are the steps for creating an analogue clock.</p>
+    <h3>Step 2:</h3>
+    <p> Define a variable and make the object of the SimpleDate format class. <br>
+        Here the xcenter and ycenter
+        variables are used to define the centre coordinate of the clock and the lastxs and lastys variables used to
+        define the<br>
+         End coordinate of the second's hand and the other variables are lastxm, lastym, lastxh, lastyh are
+        also used for defining the end coordinate of the minutes and hours hands.</p>
+    <h3>Step 3:</h3>
+    <p>We are creating a structured method for the design of the analog clock.<br> In this method we set the digit
+        (3,6,9,12) coordinates and create an oval and set the color of digit and oval.</p>
+    <h3>Step 4: </h3>
+    <p>Calculate the seconds, minutes and hours coordinates from the current time by getting the system time.
+        And convert the value into an integer form.</p>
+    <h3>Step 5: </h3>
+    <p>For moving needle logics. Actually in the following line we define some general condition that is found
+        in all types of clocks such as <br>
+        when the seconds hand reaches 12 then the minutes hand moves 1 step and then
+        after moving 5 steps of the minutes hand then 1-stepmoves a hours needle.</p>
+    <h3>Step 6: </h3>
+    <p> For moving needle minute and hours. this code for set the color of needle and moving forward rest of if
+        conditions.</p>
+    <h3>Step 7:</h3>
+    <p>Define the method of Runable Interface. In the following, all the methods of the Runable interface must
+        be overriden with the definitons of their own <br>
+        functionality within the stop method we pass 100 microseconds and
+        this method throws an interrupt exception so these are put into a try block.</p>
+        <h3>Step 8: </h3>
+    <p>Creating a frame within main methods. In the following code we define three things creating the object of
+        the Color and Frame Clock classes and set the background color and add a content pane on the frame.</p>
+
+</body>
+
+</html>
